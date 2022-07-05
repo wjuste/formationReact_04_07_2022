@@ -1,0 +1,15 @@
+Rappels : 
+    - Langage FRONT, executé par le navigateur client
+    (V8 moteur JS de Chrome,  SpiderMonkey : moteur JS de FireFox)
+    - Langage dont le typage est automatique et dynamique, et non fixe 
+    (ce qu'il donne l'impression qu'il pas typé)
+    - Langage interprété. 
+      ==> Le JavaScript est un langage interprété
+          Cela signifie qu'il va pouvoir être executé directement 
+
+Permet : 
+    - Manupulation du DOM
+     DOM : Document Object Model 
+     Rperesentation de notre page HTML sous forme d'objet javascript
+     Le DOM est l'API qui nous permet de manipuler la page HTML
+     - Sureveiller des évenements 
