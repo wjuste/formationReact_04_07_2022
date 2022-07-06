@@ -9,6 +9,7 @@ const Static = () => {
         {id:3, name:'Clémentines', price: 3.1}
     ];
     const isLogged = true;
+    
     const name = "Jane Doe";
 
     const conditionalDisplay = () => {
@@ -29,7 +30,7 @@ const Static = () => {
                 <article>
                     <h2>Les listes</h2>
                     <ul>
-                        {/* prop key :  *doit contenir une valeur unique
+                        {/* prop key :  doit contenir une valeur unique
                         (comme la propriété id) */}
                         {fruits.map(fruit => <li key={fruit}>{fruit}</li>)}
                         {/* 
@@ -49,6 +50,35 @@ const Static = () => {
                         }
                     </div>
                 </article>
+                <article>
+                    <h2>Affichage conditionnel</h2>
+                    <p>Plusieurs solutions possibles : soit directement dans le JSX, soit via une fonction</p>
+                    <section>
+                        <h3>Exemple JSX "Si... Sinon..."</h3>
+                        {/*  Afficher le nom de l'utilisateur si connecté (isLogged, ou alors écrire "Anonyme"*/}
+                        <p>Bonjour {(isLogged) ? name : 'Anonyme'}</p>
+
+                        {(fruits.length > 0)?
+                            (<ul>
+                                {fruits.map(f => <li key={f+10}>{f}</li>)}
+                            </ul>) :
+                            (<p>Pas de fruits...</p>)
+                        }
+                    </section>
+
+                    <section>
+                        <h3>JSX : Si... alors</h3>
+                        {isLogged && <p>Vous êtes connecté.e</p>}
+                    </section>
+
+                    <section>
+                        <h3>En fonction</h3>
+                        {conditionalDisplay()}
+                    </section>
+
+                </article>
+
+              
             </main>
         </>
     )

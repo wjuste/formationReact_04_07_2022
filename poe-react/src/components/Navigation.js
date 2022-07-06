@@ -15,6 +15,12 @@ const Navigation = () => {
                     <li>
                         <NavLink to="/static">Static</NavLink>
                     </li>
+                    <li>
+                        <NavLink to="/hooks">Hooks</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/props">Props</NavLink>
+                    </li>
                 </ul>
             </nav>
         </>
