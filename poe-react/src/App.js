@@ -7,6 +7,9 @@ import Routage from './pages/Routage';
 import Static from './pages/Static';
 import State from './pages/State';
 import Props from './pages/Props';
+import { BackBtn } from './components/Buttons';
+import Connexion from './pages/Connexion';
+import Effect from './pages/Effect';
 
 function App() {
   return (
@@ -21,7 +24,10 @@ function App() {
             <Route path="/static" element={<Static/>} />
             <Route path="/hooks" element={<State/>} />
             <Route path="/props" element={<Props/>} />
+            <Route path="/login" element={<Connexion/>} />
+            <Route path="/effect" element={<Effect/>} />
           </Routes>
+          <BackBtn />
         </div>
       </BrowserRouter>
     </div>

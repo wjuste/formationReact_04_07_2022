@@ -33,3 +33,11 @@ h2 {
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
+
+button {
+  background-color: var(--dark);
+  color: var(--light);
+  border: solid 2px transparent;
+  padding: 10px;
+  border-radius: 5px;
+}

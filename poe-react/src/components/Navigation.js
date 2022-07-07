@@ -21,6 +21,12 @@ const Navigation = () => {
                     <li>
                         <NavLink to="/props">Props</NavLink>
                     </li>
+                    <li>
+                        <NavLink to="/login">Login</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/effect">Effect</NavLink>
+                    </li>
                 </ul>
             </nav>
         </>
