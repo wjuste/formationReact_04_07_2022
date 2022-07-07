@@ -12,6 +12,8 @@ import Connexion from './pages/Connexion';
 import Effect from './pages/Effect';
 import Requests from './pages/Requests';
 import Forms from './pages/Forms';
+import UserParam from './pages/UserParam';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
             <Route path="/effect" element={<Effect/>} />
             <Route path="/requests" element={<Requests/>} />
             <Route path="/forms" element={<Forms/>} />
+            <Route path="/user/:id" element={<UserParam/>} />
+            <Route path="*" element={<NotFound/>} />
           </Routes>
           <BackBtn />
         </div>
