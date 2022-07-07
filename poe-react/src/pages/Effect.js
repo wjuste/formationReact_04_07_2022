@@ -5,7 +5,7 @@
       - Sauvegarder ce panier à chaque mise à jours    
 */
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Effect = () => {
     const [counter, setCounter] = useState(0);
@@ -18,6 +18,35 @@ const Effect = () => {
         toto = "Not toto";
         console.log("in increment : ", toto);
     }
+
+    //Agit a chaque modification 
+    useEffect(() => {
+        console.log("(First) Counter a été incrementé, new value : ", counter)
+     });
+
+     /*
+        On peut passer un deuxième paramètre à la fonction useEffect : 
+        Un tableau contenant les données à surveiller 
+        useEffect ne se lancera que lorsque ce sont ces valeurs qui sont modifiées
+     */
+     useEffect(() => {
+        console.warn("(second) Counter a été incrémenté : ", counter)
+     }, [counter]);
+
+     //Pour toute souscription à des flux, connections Observables, des websockets 
+     //des timers...: Il faut "nettoyer " : désouscrire, couper la connection 
+     useEffect(() => {
+        let seconds = 0; 
+        console.log("Component a été rendu depuis : ");
+        let intervale = setInterval(() => {
+            seconds++;
+            console.log(`${seconds} seconds`)
+        }, 1000)
+        return () => {
+            //couper tous les flux
+            clearInterval(intervale);
+        }
+     });
 
     return (
         <>  

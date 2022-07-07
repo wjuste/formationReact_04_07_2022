@@ -10,6 +10,8 @@ import Props from './pages/Props';
 import { BackBtn } from './components/Buttons';
 import Connexion from './pages/Connexion';
 import Effect from './pages/Effect';
+import Requests from './pages/Requests';
+import Forms from './pages/Forms';
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
             <Route path="/props" element={<Props/>} />
             <Route path="/login" element={<Connexion/>} />
             <Route path="/effect" element={<Effect/>} />
+            <Route path="/requests" element={<Requests/>} />
+            <Route path="/forms" element={<Forms/>} />
           </Routes>
           <BackBtn />
         </div>
