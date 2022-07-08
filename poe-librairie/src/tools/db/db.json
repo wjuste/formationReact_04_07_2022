@@ -1,0 +1,7 @@
+{
+    "shows" : [
+      {"id": 1, "title": "The Walking Dead", "isWatched": true, "image": "Images/wd.jpg"},
+      {"id": 2, "title": "The Mandalorian", "isWatched": true, "image": "Images/grogu.jpg"},
+      {"id": 3, "title": "Boba Fett", "isWatched": false, "image": "Images/grogu.jpg"}
+    ]
+}

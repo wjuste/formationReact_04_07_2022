@@ -2,6 +2,7 @@ import './App.css';
 import {useState} from "react";
 import Header from './components/Header';
 import Connexion from './components/Connexion';
+import Librairie from './components/Librairie';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
           setConnected = {setConnected}
           setName = {setName}
       />
+      { (isConnected) ? <Librairie /> : <p>Veuillez vous connecter</p>}
     </div>
   );
 }

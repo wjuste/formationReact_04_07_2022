@@ -1,0 +1,30 @@
+.card {
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px gray;
+}
+
+.card-header {
+    height: 60%;
+    overflow: hidden;
+}
+
+.card-header img {
+    width: 100%;
+}
+
+.card button {
+    background-color: hsla(196, 63%, 16%, 1);
+    color: hsla(40, 88%, 97%, 1);
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid hsla(196, 63%, 16%, 1) ;
+    transition: .5s linear;
+    margin-right: 20px;
+}
+
+.card button:hover {
+    color: hsla(196, 63%, 16%, 1);
+    background-color: hsla(40, 88%, 97%, 1) ;
+    cursor: pointer;
+}
